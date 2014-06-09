@@ -16,8 +16,8 @@ module.exports = function (grunt) {
         // Merge task-specific and/or target-specific options with these defaults.
 
         var repo = this.options({
-                username: 'caolan',
-                repository: 'async',
+                username: 'marsanla',
+                repository: 'grunt-github-version',
                 version: '0.0.1'
             }),
 

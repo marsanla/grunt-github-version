@@ -32,9 +32,9 @@ module.exports = function (grunt) {
         github_version: {
             all: {
                 options: {
-                    username: 'caolan',
-                    repository: 'async',
-                    version: '1.0.1'
+                    username: 'marsanla',
+                    repository: 'grunt-github-version',
+                    version: '0.0.1'
                 }
             }
         },
