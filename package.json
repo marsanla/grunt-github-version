@@ -1,7 +1,7 @@
 {
     "name": "grunt-github-version",
     "description": "Check if you have the latest version of the project.",
-    "version": "0.1.0",
+    "version": "0.0.2",
     "homepage": "https://github.com/marsanla/grunt-github-version",
     "author": {
         "name": "Marcos Sanz",
