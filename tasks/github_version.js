@@ -33,22 +33,22 @@ module.exports = function (grunt) {
                             if (body[0].name) {
                                 if (semver.lt(repo.version, body[0].name)) {
                                     grunt.log.warn('Update "' + repo.repository + '", Your current version is ' + repo.version + ', and the new one is ' + body[0].name + '.');
-                                    done = false;
+                                    done(false);
                                 } else {
                                     grunt.log.ok('Project ' + repo.repository + ' is up to date.');
-                                    done = true;
+                                    done();
                                 }
                             } else {
                                 grunt.log.warn('Cannot find the last version in ' + repo.repository + '.');
-                                done = false;
+                                done(false);
                             }
                         } else {
                             grunt.log.warn('Empty release repository: ' + repo.repository + '.');
-                            done = false;
+                            done(false);
                         }
                     } else {
                         grunt.log.warn('Could\'t check version for ' + repo.repository + '.');
-                        done = false;
+                        done(false);
                     }
                 });
             },
